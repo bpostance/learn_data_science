@@ -1,0 +1,36 @@
+# [Quick Start Python Packages](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/quickstart.html)
+
+### 1. A python packages is structured as:
+
+My_App/
+    LICENSE.txt
+    README.txt
+    setup.py
+    my_app/
+        __init__.py
+
+### 2. setup.py
+The setup.py file is at the heart of a Python project. It describes all of the metadata about your 
+project. There are only three required fields: name, version, and packages. 
+
+ - Name field must be unique if you wish to publish your package on the Python Package Index (PyPI).
+ - Version field keeps track of different releases of the project.
+ - Packages field describes where you’ve put the Python source code within your project.
+
+### 3. Create a release
+To create a release, your source code needs to be packaged into a single archive file. This can be done 
+with the sdist command:
+
+	$ python setup.py sdist
+
+his will create a dist sub-directory in your project, and will wrap-up all of your project’s source 
+code files into a distribution file (tar.gz or .zip).
+
+### 4. create an installer
+Create a bdist_wininst distribution file of our project, which will create a Windows installable file. 
+
+	$ python setup.py sdist bdist_wininst upload
+
+
+### [Now do this more in-depth 
+example](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/creation.html)

@@ -12,5 +12,7 @@ sys.path.insert(0, 'C:/Users/Ben/Desktop/app/sub2')
 from sub1 import s1
 from sub2 import s2
 
-s1.Sub1.sub1()
-s2.Sub2.sub2()
+s1.Sub1.run_sub1()
+
+new = s2.Sub2()
+new.run_sub2()
