@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='My_App',
+    name='Lesson_01_packages',
     version='0.1dev',
     url='My_App_Website.com',
     author='Old Smaug',
