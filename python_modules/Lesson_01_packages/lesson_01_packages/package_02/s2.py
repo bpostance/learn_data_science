@@ -5,7 +5,7 @@ Created on Sat Apr 13 07:28:21 2019
 @author: Ben
 """
 
-from sub2.s2_params import param1
+from package_02.s2_params import param1
 
 class Sub2:  
 
