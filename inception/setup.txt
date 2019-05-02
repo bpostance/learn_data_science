@@ -1,0 +1,19 @@
+setup.
+#https://inception-project.github.io//releases/0.8.4/docs/admin-guide.
+#https://inception-project.github.io//releases/0.6.1/docs/developer-guide.html#_external_recommender
+#https://inception-project.github.io//releases/0.8.4/docs/user-guide.html#_external_recommender
+#https://github.com/inception-project/external-recommender-spacy
+# $ python -m spacy download en_core_web_sm
+# $ python -m spacy download en_core_web_md
+# $ python -m spacy download en_core_web_lg
+
+## make sure model loads in app.py 
+"""
+# Models
+
+import en_core_web_sm
+nlp = en_core_web_sm.load(disable=['parser'])
+#nlp = spacy.load("en_core_web_sm", disable=['parser'])
+"""
+
+add app.py localhost to recommendeer
