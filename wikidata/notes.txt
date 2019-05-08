@@ -1,0 +1,10 @@
+https://query.wikidata.org/#SELECT%20distinct%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3Fweb%20%3Finception%20%3FISIN%20%23%20define%20columns%0AWHERE%7B%0A%20%20%3Fitem%20p%3AP31%2Fps%3AP31%2Fwdt%3AP279%2a%20wd%3AQ783794.%20%23%20get%20item-company%20and%20its%20subclasses%0A%20%20%3Fitem%20%3Flabel%20%22%22%22Beazley%20Group%22%22%22%40en.%20%23%20query%20item%20name%0A%20%20%3Fitem%20wdt%3AP856%20%3Fweb.%20%23%20get%20item-web%0A%20%20%3Fitem%20wdt%3AP571%20%3Finception.%20%23%20get%20item-web%0A%20%20%3Fitem%20wdt%3AP946%20%3FISIN.%20%23%20get%20item-isin%0A%20%20%3Farticle%20schema%3Aabout%20%3Fitem%20.%0A%20%20%3Farticle%20schema%3AinLanguage%20%22en%22%20.%0A%20%20%3Farticle%20schema%3AisPartOf%20%3Chttps%3A%2F%2Fen.wikipedia.org%2F%3E.%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%20%20%20%20%0A%7D
+
+https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Beazley&language=en&type=item
+
+https://www.wikidata.org/wiki/Q4878289
+
+https://www.mediawiki.org/wiki/API:Search
+
+https://www.mediawiki.org/wiki/Wikibase/API#wbgetentities
+https://www.wikidata.org/w/api.php?action=help&modules=wbgetentities

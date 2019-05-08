@@ -1,0 +1,3 @@
+$ split -l 100000 uci-news-aggregator.csv news-split
+# for split file
+$ head=$(head -n 1 uci-news-aggregator.csv) | sed -i 1i$head news-splitae
