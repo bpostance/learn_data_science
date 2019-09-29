@@ -40,7 +40,7 @@ toposort==1.5
 tqdm==4.31.1
 ujson==1.35
 urllib3==1.24.2
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 win-inet-pton==1.1.0
 wincertstore==0.2
 wrapt==1.10.11
