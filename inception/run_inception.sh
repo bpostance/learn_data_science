@@ -1,1 +1,0 @@
-java -jar /c/inception/inception-app-standalone-0.8.4.jar
