@@ -10,6 +10,12 @@ __pycache__/
 *.csv
 *.xlsx
 *.zip
+*.csv
+*.7z
+*.edges
+*.node_labels
+*.p
+*.txt
 
 # Distribution / packaging
 .Python
