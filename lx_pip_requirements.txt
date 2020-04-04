@@ -36,7 +36,7 @@ murmurhash==0.28.0
 nb-conda-kernels==2.2.1
 nbconvert==5.5.0
 nbformat==4.4.0
-nltk==3.4.1
+nltk==3.4.5
 notebook==5.7.8
 numpy==1.16.3
 pandas==0.24.2
