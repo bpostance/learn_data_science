@@ -1,12 +1,8 @@
-### NEO4J
-
-These [free Neo4j training courses](https://neo4j.com/blog/announcing-data-science-with-neo4j-and-applied-graph-algorithms-online-training-courses/) introduce you to using Neo4j as part of your Data Science and Machine Learning workflows.
-
-```
-├── [NEO4J Docker Hub](https://hub.docker.com/_/neo4j)
-├── [1.0-DataScience](https://neo4j.com/graphacademy/online-training/data-science/)
-├── [2.0-AppliedGraphAlogorithms](https://neo4j.com/graphacademy/online-training/applied-graph-algorithms/)
-```
-
-### issues:
- - I tried to get docker working (see [here](https://neo4j.com/docs/operations-manual/current/docker/), and [here](https://neo4j.com/developer/docker-run-neo4j/)).
+# Graph Learning
+ - https://towardsdatascience.com/learning-in-graphs-with-python-part-3-8d5513eef62d
+ - https://www.freecodecamp.org/news/how-to-think-about-your-data-in-a-different-way-b84306fc2e1d/
+ - https://github.com/taboola/node2vec-example/blob/master/node2vec.ipynb
+ - https://www.ahmedbesbes.com/blog/interactive-topic-mining
+ - https://towardsdatascience.com/how-to-cluster-in-high-dimensions-4ef693bacc6
+ - https://github.com/dchannah/fraudhacker/blob/master/src/database_tools.py
+ - https://www.analyticsvidhya.com/blog/2020/01/link-prediction-how-to-predict-your-future-connections-on-facebook/
