@@ -1,1 +1,1 @@
-# Random learnings from across ML and DataScience
+# Tutorials and guides from across Statistics, Machine Learning and DataScience
