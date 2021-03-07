@@ -1,1 +1,1 @@
-### Tutorials and learning materials from across Statistics, Machine Learning and DataScience
+### Learning aterials from across Statistics, Machine Learning and DataScience
