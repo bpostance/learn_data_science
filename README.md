@@ -1,1 +1,1 @@
-### Learning aterials from across Statistics, Machine Learning and DataScience
+### Learning materials from across Statistics, Machine Learning and DataScience
