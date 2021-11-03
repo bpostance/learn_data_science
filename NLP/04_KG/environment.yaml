@@ -1,0 +1,12 @@
+name: py37
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - neuralcoref
+  - spacy
+  - pandas
+  - python=3.7
+  - pip:
+    - networkx
+prefix: C:\Users\Ben\miniconda3\envs\py37
