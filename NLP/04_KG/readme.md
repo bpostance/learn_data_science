@@ -12,9 +12,7 @@
 > Unstructured Text: Social Media, Blogs, Images, Videos, Audios 
 
 ### How are knowledge graphs constructed?
-
 <img src="./model_architecture.svg" width=600 height=400>
-
 - Entity Extraction   
 In this step, the aim is to extract right entities from the text data. spaCy provides NER (Named Entity Recognition) which can be used for this purpose.  
 
