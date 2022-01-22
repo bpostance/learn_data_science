@@ -44,3 +44,4 @@ The hard part of knowledge graphs is to identify what kind of relationship exist
  - [OLLIE](https://www.reddit.com/r/LanguageTechnology/comments/bovsf5/we_release_opiec_the_largest_open_information/)
  - [Clausie](https://github.com/mmxgn/clausiepy)
  - [Minie](https://github.com/mmxgn/miniepy/graphs/contributors)
+ - [OpenNRE](https://github.com/thunlp/OpenNRE)
