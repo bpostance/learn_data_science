@@ -8,7 +8,7 @@
 > Chris Nolan (Director, Producer, person) ---> born in  ----> London (place) ---> Director of  ----> Interstellar (Movie) ---> shooted in  -----> Iceland (place)  
 
 - Source of information for building knowledge graphs: 
-> Structured Text: Wikipedia, Dbpedia  
+> Structured Text: Wikipedia, DBpedia  
 > Unstructured Text: Social Media, Blogs, Images, Videos, Audios 
 
 ### How are knowledge graphs constructed?
@@ -29,6 +29,7 @@ The hard part of knowledge graphs is to identify what kind of relationship exist
 - https://github.com/bpostance/corpus-to-graph-ml
 - https://stackoverflow.com/questions/44096918/how-to-implement-end-to-end-relation-extraction-using-lstms
 - https://github.com/bpostance/LSTM-ER
+- https://github.com/ProKil/FewRel
 - https://www.aclweb.org/anthology/P16-1105.pdf
 - https://www.reddit.com/r/MachineLearning/comments/bd4zrl/d_knowledge_graphs_how_do_you_build_your_own/
 - https://medium.com/vectrconsulting/build-your-own-knowledge-graph-975cf6dde67f
@@ -39,7 +40,7 @@ The hard part of knowledge graphs is to identify what kind of relationship exist
 - https://ahmedbesbes.com/how-to-mine-newsfeed-data-and-extract-interactive-insights-in-python.html
  - [Ownership: E.g. Noun or Named Entity followed by: NNS/VBZ](https://sites.google.com/site/partofspeechhelp/home/nns_vbz)
  - [KG and pruning](http://philipperemy.github.io/information-extract/)
-  - [git](https://github.com/philipperemy/information-extraction-with-dominating-rules)
+   - [git](https://github.com/philipperemy/information-extraction-with-dominating-rules)
  - [OLLIE](https://www.reddit.com/r/LanguageTechnology/comments/bovsf5/we_release_opiec_the_largest_open_information/)
  - [Clausie](https://github.com/mmxgn/clausiepy)
  - [Minie](https://github.com/mmxgn/miniepy/graphs/contributors)
