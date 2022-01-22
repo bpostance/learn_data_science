@@ -9,4 +9,7 @@ dependencies:
   - python=3.7
   - pip:
     - networkx
+    - python-louvain
+    - steamlit
+    - pyvis
 prefix: C:\Users\Ben\miniconda3\envs\py37
