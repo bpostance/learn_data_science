@@ -45,3 +45,5 @@ The hard part of knowledge graphs is to identify what kind of relationship exist
  - [Clausie](https://github.com/mmxgn/clausiepy)
  - [Minie](https://github.com/mmxgn/miniepy/graphs/contributors)
  - [OpenNRE](https://github.com/thunlp/OpenNRE)
+ - [neuralcoref](https://medium.com/huggingface/state-of-the-art-neural-coreference-resolution-for-chatbots-3302365dcf30)
+ - https://github.com/tomasonjo/trinity-ie
