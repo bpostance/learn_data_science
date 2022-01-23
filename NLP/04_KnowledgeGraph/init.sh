@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # setup python env
-conda env create -f .\environment.yaml
+conda env create -f ./environment.yaml
 conda activate py37
 
 # install spacy large model
