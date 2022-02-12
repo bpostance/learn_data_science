@@ -47,3 +47,15 @@ The hard part of knowledge graphs is to identify what kind of relationship exist
  - [OpenNRE](https://github.com/thunlp/OpenNRE)
  - [neuralcoref](https://medium.com/huggingface/state-of-the-art-neural-coreference-resolution-for-chatbots-3302365dcf30)
  - https://github.com/tomasonjo/trinity-ie
+
+
+temp:
+
+https://www.kaggle.com/anshuljdhingra/spacy-text-meta-features-knowledge-graphs
+https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
+https://towardsdatascience.com/from-text-to-knowledge-the-information-extraction-pipeline-b65e7e30273e
+http://wikifier.org/submit.py
+https://www.geeksforgeeks.org/python-program-to-find-indices-of-overlapping-substrings/
+https://lei.info/portal/resources/semantic-lei-data/
+https://towardsdatascience.com/visualizing-networks-in-python-d70f4cbeb259
+https://blog.streamlit.io/the-streamlit-agraph-component/
