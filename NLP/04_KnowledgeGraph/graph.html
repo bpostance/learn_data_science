@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 700px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"ent_typ": "node", "id": 6, "label": "City sources", "shape": "dot", "size": 10, "title": "City sources"}, {"ent_typ": "node", "id": 7, "label": "Brookfield", "shape": "dot", "size": 82, "title": "Brookfield"}, {"ent_typ": "node", "id": 8, "label": "preparations", "shape": "dot", "size": 17, "title": "preparations"}, {"ent_typ": "node", "id": 9, "label": "a sale process", "shape": "dot", "size": 17, "title": "a sale process"}, {"ent_typ": "node", "id": 14, "label": "a longer period", "shape": "dot", "size": 50, "title": "a longer period"}, {"ent_typ": "node", "id": 10, "label": "the accountancy firm PriceWaterhouseCoopers", "shape": "dot", "size": 5, "title": "the accountancy firm PriceWaterhouseCoopers"}, {"ent_typ": "node", "id": 11, "label": "Investment banks", "shape": "dot", "size": 17, "title": "Investment banks"}, {"ent_typ": "node", "id": 12, "label": "one person", "shape": "dot", "size": 17, "title": "one person"}, {"ent_typ": "node", "id": 13, "label": "the process", "shape": "dot", "size": 26, "title": "the process"}, {"ent_typ": "node", "id": 15, "label": "an auction", "shape": "dot", "size": 10, "title": "an auction"}, {"ent_typ": "node", "id": 16, "label": "it", "shape": "dot", "size": 5, "title": "it"}, {"ent_typ": "node", "id": 17, "label": "the business", "shape": "dot", "size": 2, "title": "the business"}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 6, "relation": "said", "title": "said", "to": 7, "weight": 1}, {"arrows": "to", "from": 6, "relation": "had engaged to assist with", "title": "had engaged to assist with", "to": 8, "weight": 1}, {"arrows": "to", "from": 6, "relation": "for", "title": "for", "to": 9, "weight": 1}, {"arrows": "to", "from": 7, "relation": "had engaged to assist with", "title": "had engaged to assist with", "to": 8, "weight": 1}, {"arrows": "to", "from": 7, "relation": "for", "title": "for", "to": 9, "weight": 1}, {"arrows": "to", "from": 7, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 8, "relation": "for", "title": "for", "to": 9, "weight": 1}, {"arrows": "to", "from": 10, "relation": "to assist with", "title": "to assist with", "to": 8, "weight": 1}, {"arrows": "to", "from": 10, "relation": "for", "title": "for", "to": 9, "weight": 1}, {"arrows": "to", "from": 11, "relation": "have yet to formally appointed to handle", "title": "have yet to formally appointed to handle", "to": 12, "weight": 1}, {"arrows": "to", "from": 11, "relation": "close to", "title": "close to", "to": 13, "weight": 1}, {"arrows": "to", "from": 11, "relation": "was possible", "title": "was possible", "to": 7, "weight": 1}, {"arrows": "to", "from": 11, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 12, "relation": "close to", "title": "close to", "to": 13, "weight": 1}, {"arrows": "to", "from": 12, "relation": "was possible", "title": "was possible", "to": 7, "weight": 1}, {"arrows": "to", "from": 12, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 13, "relation": "was possible", "title": "was possible", "to": 7, "weight": 1}, {"arrows": "to", "from": 13, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 15, "relation": "close to", "title": "close to", "to": 13, "weight": 1}, {"arrows": "to", "from": 15, "relation": "was possible", "title": "was possible", "to": 7, "weight": 1}, {"arrows": "to", "from": 15, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 16, "relation": "was possible", "title": "was possible", "to": 7, "weight": 1}, {"arrows": "to", "from": 16, "relation": "would decide to retain for", "title": "would decide to retain for", "to": 14, "weight": 1}, {"arrows": "to", "from": 17, "relation": "for", "title": "for", "to": 14, "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
