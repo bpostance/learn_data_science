@@ -1,3 +1,3 @@
 # Learn Data Science
 
-Learning demos and materials from across Statistics, Machine Learning and DataScience
+Learning, demo's and examples from across Statistics, Machine Learning and DataScience
