@@ -3,7 +3,7 @@ import streamlit as st
 import networkx as nx
 from streamlit_agraph import agraph, Node, Edge, Config
 
-st.markdown("# Graph Vis")
+st.markdown("# Knowledge Graph")
 
 with st.spinner("Loading graph dataset"):
     G = joblib.load('graph.joblib')
