@@ -8,6 +8,7 @@ st.markdown("# Knowledge Graph")
 with st.spinner("Loading graph dataset"):
     G = joblib.load('graph.joblib')
 
+print(G.nodes(data=True))
 # controls
 ego_ = st.sidebar.selectbox('Ego network',[False, True,],
                             help="Limit nodes to subset of most influential 'Ego' network only") 
@@ -35,7 +36,7 @@ with st.spinner("Subset graph"):
             subgraph = nx.ego_graph(subgraph, most_connected_node)
 
 # Now create the equivalent Node and Edge lists
-nodes = [Node(id=n[0], label=str(n[1]['label']), size=(2+n[1]['degree'])**3) for n in subgraph.nodes(data=True)]
+nodes = [Node(id=n[0], label=str(n[1]['name']), size=(2+n[1]['degree'])**3) for n in subgraph.nodes(data=True)]
 edges = [Edge(
                 source=e[0],
                 target=e[1],
